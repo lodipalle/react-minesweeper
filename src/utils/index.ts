@@ -1,4 +1,5 @@
 import {MAX_COLS, MAX_ROWS} from "../constants";
+import {Cellvalue} from "../types";
 
 export const generateCells = () => {
   const cells = [];
