@@ -1,7 +1,7 @@
 import { MAX_COLS, MAX_ROWS } from "../constants";
 import { Cell, CellValue, CellState } from "../types";
 
-export const generateCells = () => {
+export const generateCells = (): Cell[][] => {
   const cells: Cell[][] = [];
 
   for (let row = 0; row < MAX_ROWS; row++) {
@@ -13,4 +13,6 @@ export const generateCells = () => {
       });
     }
   }
+
+  return cells;
 };
